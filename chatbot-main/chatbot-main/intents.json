@@ -1,0 +1,159 @@
+{"intents":
+[
+            {
+                "tag":"greetings",
+                "patterns": ["hello","hey","hi","good day","greetings","what's up?","how is it going"],
+                "responses":["Hello","Hey!","What can i do for you?"]
+            },
+            {
+                "tag":"goodbye",
+                "patterns": ["cya","see you later","goodbye","have a good day","bye","cao","see ya"],
+                "responses":["Have a nice day","Goodbye"]
+            },
+            {
+                "tag":"age",
+                "patterns": ["how old","how old are you?","what is your age","how old are you","age?"],
+                "responses":["I get reborn after every compilation","Hey!"]
+            },
+            {
+                "tag":"name",
+                "patterns": ["how can you help me","what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
+                "responses":["you can call me Hosbot!","i am Hosbot!","i am Hosbot your medical assistant"]
+            },
+            {
+                "tag" : "continuation",
+                "patterns" : ["Thank you", "Thanks a lot", "Thanks"],
+                "responses" : ["You are welcome","anytime"]
+            },
+            {
+                "tag":"Consultation",
+                "patterns": ["what should i do now","consult a doctor","who should i contact for consultation?","is there any doctor available?","can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
+                "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
+            },
+            {
+                "tag":"hospital_info",
+                "patterns":["what hospitals are available","list of hospitals","which hospitals are available","tell me about the hospitals"],
+                "responses":["Vajra hospital\nSpark hospital"]
+            },
+            {
+                "tag": "doctors_info",
+                "patterns": ["which doctors are available","give me the doctors list","Who are the doctors in the hospital?", "Tell me about the doctors", "List of doctors"],
+                "responses": ["We have a team of highly qualified doctors specializing in various fields. Please provide the specific hospital you are interested in."]
+            },
+            {
+                "tag" : "vajra_faq",
+                "patterns":["doctors list in vajra hospital","tell me about vajra hospital","vajra hospital","Which doctors are available in Vajra hospital?", "Tell me about doctors in Vajra hospital","Tell me about the doctors in Vajra hospital", "Could you please tell me the details about the doctors in vajra hospitals","Is a specialist available in this hospital","specializations in vajra hospital"],
+                "responses": ["ophthalmologist\ngastroenterologist\ndermatologist\ncardiologist\ngynaecologist"]
+            },
+            {
+                "tag" : "spark_faq",
+                "patterns":["doctors list in spark hospital","tell me about spark hospital","spark hospital","Is a specialist available in spark hospital","Which doctors are available in spark hospital?", "Tell me about the doctors in spark hospital","Tell me about doctors in spark hospital","doctors in spark hospital","specializations in spark hospital"],
+                "responses": ["cardiologist\ngynaecologist\northopaedic\npediatrician\ndentist\nent"]
+            },
+            {
+                "tag":"consult ophthalmologist",
+                "patterns": ["is ophthamologist available in vajra hospital","i want to consult ophthamologist","can i consult an ophthamologist","i want to consult ophthamologist in vajra hospital","consult eye doctor","consult eye specialist","is any ophthamologist free?", "is there any doctor who can treat eyes?", "can you give me some suggestions for a doctor who treats eyes?","can you set up a meeting with an eye doctor for consultation?","is there any doctor available for consultation who can treat eye?", "set me a meeting with an ophthalmologist?", "are any opthalmologists available?"],
+                "responses": ["We have Dr Rajesh Kumar available from 2:00pm to 6:00pm in vajra hospital", "Dr Priya Sharma would be available from 2:00 PM in vajra hospital", "We have Dr Amit Patel available at 9:00AM on Monday and Tuesday in vajra hospital"]
+            },
+            {
+                "tag":"consult_ophtho",
+                "patterns":["i want to consult ophthamologist in spark hospital","consult ophthamologist in spark","consult ophthamologist in spark hospital","i want to consult ophthamologist in spark","is ophthamologist available in spark hospital"],
+                "responses":["sorry,ophthamologist is not available in spark hospital. Please try in vajra hospital"]
+            },
+            {
+                "tag":"consult gynaecologist",
+                "patterns":["can i consult a gynaecologist","i want to consult gynaecologist","consult gynaecologist"],
+                "responses":["Please mention along with the hospital"]
+            },
+            {
+                "tag":"consult vajra gynaecologist",
+                "patterns": ["i want to consult gynaecologist in vajra hospital","is gynaecologist available in vajra hospital","can i consult an gynaecologist in vajra hospital","consult pregnancy doctor in vajra hospital","consult pregnancy specialist in vajra hospital","is any gynaecologists free in vajra hospital?", "is there any doctor who can treat pregnancy issues in vajra hospital?", "can you give me some suggestions for a doctor who specialises in gynaecology in vajra hospital?","can you set up a meeting with a gynaecologist in vajra hospital?", "set me a meeting with an gynaecologist in vajra hospital?", "are any gynaecologists available in vajra hospital?"],
+                "responses": ["We have Dr Sneha Singh available at 4:00PM in vajra hospital available if you want to consult a female doctor", "We have Dr. Vikram Gupta available from 10am to 5pm in vajra hospital"]
+            },
+            {
+                "tag":"consult spark gynaecologist",
+                "patterns": ["i want to consult gynaecologist in spark hospital","is gynaecologist available in spark hospital","can i consult an gynaecologist in spark hospital","i want to consult a gynaecologist in spark hospital","consult a gynaecologist in spark hospital","consult pregnancy doctor in spark hospital","consult pregnancy specialist in spark hospital","is any gynaecologists free in spark hospital?", "is there any doctor who can treat pregnancy issues in spark hospital?", "can you give me some suggestions for a doctor who specialises in gynaecology in spark hospital?","can you set up a meeting with a gynaecologist in spark hospital?", "set me a meeting with an gynaecologist in spark hospital?", "are any gynaecologists available in spark hospital?"],
+                "responses": ["We have Dr Neha Jain available in spark hospital after 11:00 AM if you to consult a female doctor"]
+            },
+            {
+                "tag":"consult vajra cardiologist",
+                "patterns": ["is cardiologist available in vajra hospital","i want to consult a cardiologist in vajra hospital","consult a cardiologist in vajra hospital","consult heart doctor in vajra hospital","consult heart specialist in vajra hospital","is any cardiologist free in vajra hospital?", "is there any doctor who can treat heart related issues in vajra hospital?", "can you give me some suggestions for a doctor who specialises in heart related problems in vajra hospital?","can you set up a meeting with a cardiologist in vajra hospital?", "set me a meeting with an cardiologist in vajra hospital?", "are any cardiologist available in vajra hospital?"],
+                "responses": ["We have Dr Rahul Sharma available from 9am to 4pm in vajra hospital", "We have Dr Meera Bhatia available from 10am to 3pm tomorrow in vajra hospital", "We have Dr. Vikram Gupta available from 2pm to 5pm in vajra hospital"]
+            },
+            {
+                "tag":"consult spark cardiologist",
+                "patterns": ["is cardiologist available in spark hospital","can i consult cardiologist in spark hospital","i want to consult a cardiologist in spark hospital","consult a cardiologist in spark hospital","consult heart doctor in spark hospital","consult heart specialist in spark hospital","is any cardiologist free in spark hospital?", "is there any doctor who can treat heart related issues in spark hospital?", "can you give me some suggestions for a doctor who specialises in heart related problems in spark hospital?","can you set up a meeting with a cardiologist in spark hospital?", "set me a meeting with an cardiologist in spark hospital?", "are any cardiologist available in spark hospital?"],
+                "responses": ["We have Dr Rohith Varma available from 9am to 3pm in spark hospital", "We have Dr Mishika Iyer available from 10am to 5pm in spark hospital", "We have Dr. Ashish Sen available from 2pm to 8pm in spark hospital"]
+            },
+            {
+                "tag":"consult cardiologist",
+                "patterns":["can i consult cardiologist in vajra hospital","i want to consult cardiologist","consult cardiologist","consult heart doctor","i want to consult heart doctor"],
+                "responses":["Please mention along with the hospital"]
+            },
+            {
+                "tag":"consult gastroenterologist",
+                "patterns": ["i want to consult gastroenterologist","i want to consult gastroenterologist in vajra hospital","is gastroenterologist available in vajra hospital","can i consult gastroenterologist","consult doctor for gas related issues","consult specialist for gas related issues","is any gastroenterologist free?", "is there any doctor who can treat stomach related issues?", "can you give me some suggestions for a doctor who specialises in stomach related problems?","can you set up a meeting with a gastroenterologist?", "set me a meeting with an gastroenterologist?", "are any gastroenterologist available?"],
+                "responses": ["We have Dr Amitabh Dutta available from 10am to 5pm in vajra hospital", "We have Dr Shalini Thakur available from 2pm to 8pm in vajra hospital", "We have Dr. Vivek Rao available at 9am and 4pm in vajra hospital"]
+            },
+            {
+                "tag":"consult_gastro",
+                "patterns":["i want to consult gastroenterologist in spark hospital","i want to consult doctor for gas related issues in spark hospital"],
+                "responses":["sorry,ophthamologist is not available in spark hospital. Please try in vajra hospital"]
+            },
+            {
+                "tag":"consult dermatologist",
+                "patterns": ["i want to consult dermatologist","i want to consult dermatologist in vajra hospital","is dermatologist available in vajra hospital","can i consult dermatologist in vajra hospital","can i consult a skin doctor in vajra hospital","consult skin doctor","consult skin specialist","is any dermatologist free?", "is there any doctor who can treat skin related issues?", "can you give me some suggestions for a doctor who specialises in skin related problems?","can you set up a meeting with a dermatologist?", "set me a meeting with an dermatologist?", "are any dermatologist available?"],
+                "responses": ["We have Dr Nisha Mehta available from 10am to 5pm in vajra hospital", "We have Dr Manish Shah available at 2pm and 6pm in vajra hospital", "We have Dr.Pooja Gupta available from 11am to 6pm in vajra hospital"]
+            },
+            {
+                "tag":"consult_derma",
+                "patterns":["i want to consult skin doctor in spark hospital","can i consult a skin doctor in spark hospital","can i consult a dermatologist in spark hospital"],
+                "responses":["sorry,dermatologist is not available in spark hospital, please try in vajra hospital"]
+            },
+            {
+                "tag":"consult orthopaedic",
+                "patterns": ["i want to consult orthopaedic","i want to consult orthopaedic in spark hospital","is orthopaedic available in spark hospital","can i consult orthopaedic in spark hospital","consult leg doctor","consult leg specialist","consult knee doctor","consult knee specialist","is any orthopaedic free?", "is there any doctor who can treat foot related issues?", "can you give me some suggestions for a doctor who specialises in foot related problems?","can you set up a meeting with a orthopaedic?", "set me a meeting with an orthopaedic?", "are any orthopaedic available?"],
+                "responses": ["We have Dr Rakesh Sharma available from 9pm to 4pm in spark hospital", "We have Dr Anita Mehra available at 11am and 4pm in spark hospital", "We have Dr Ajay Agarwal available at 3pm and 6pm in spark hospital"]
+            },
+            {
+                "tag":"consult_ortho",
+                "patterns":["i want to consult orthopaedic in vajra hospital","can i consult an orthopaedic in vajra hospital"],
+                "responses":["sorry,orthopaedic is not available in vajra hospital, please try in spark hospital"]
+            },
+            {
+                "tag":"consult pediatrician",
+                "patterns": ["i want to consult pediatrician","i want to consult pediatrician in spark hospital","is pediatrician available in spark hospital","can i consult pediatrician in spark hospital","consult child doctor","consult child specialist","is any paediatrician free?", "is there any doctor available for my child?", "can you give me some suggestions for a doctor who specialises in children's health?","can you set up a meeting with a paediatrician?", "set me a meeting with an paediatrician?", "are any paediatrician available?"],
+                "responses": ["We have Dr Ravi Gupta available from 10am to 5pm in spark hospital", "We have Dr Swati Chaudhary available at 3:30pm and 5pm in spark hospital", "We have Dr Rajni Bajaj available from 11am in spark hospital"]
+            },
+            {
+                "tag":"consult_pediatrician",
+                "patterns":["i want to consult a pediatrician in vajra hospital","can i consult a pediatrician in vajra hospital"],
+                "responses":["sorry,pediatrician is not available in vajra hospital, please try in spark hospital"]
+            },
+            {
+                "tag":"consult dentist",
+                "patterns": ["i want to consult dentist","i want to consult dentist in spark hospital","is dentist available in spark hospital","can i consult dentist in spark hospital","consult teeth doctor","consult teeth specialist","is any dentist free?", "is there any doctor available to treat my teeth?", "can you give me some suggestions for a doctor who specialises in teeth?","can you set up a meeting with a dentist?", "set me a meeting with an dentist?", "are any dentist available?"],
+                "responses": ["We have Dr Kiran Malik available frpm 12pm to 2pm in spark hospital", "We have Dr Sangeeta Rastogi available from 9am to 12pm in spark hospital", "We have Dr Arun Sinha available from 2pm to 6pm in spark hospital"]
+            },
+            {
+                "tag":"consult_dentist",
+                "patterns":["i want to consult a dentist in vajra hospital","can i consult a dentist in vajra hospital"],
+                "responses":["sorry,dentist is not available in vajra hospital, please try in spark hospital"]
+            },
+            {
+                "tag":"consult ent",
+                "patterns": ["i want to consult ent","i want to consult an ent in spark hospital","is ent available in spark hospital","can i consult ent in spark hospital","consult ear doctor","consult ear specialist","consult nose doctor","consult nose specialist","consult throat doctor","consult throat specialist","is any ent doctor free?", "is there any doctor available who is an ent specialist now?", "can you give me some suggestions for a doctor who specialises in ent?"],
+                "responses": ["We have Dr Amar Gupta available at 12:30pm and 3pm in spark hospital", "We have Dr Ritu Chopra available at 2:00 PM in spark hospital", "We have Dr Aarti Malhotra available from 10am to 5pm in spark hospital"]
+            },
+            {
+                "tag":"consult_ent",
+                "patterns":["i want to consult an ent in vajra hospital","can i consult an ent in vajra hospital"],
+                "responses":["sorry,ent is not available in vajra hospital, please try in spark hospital"]
+            },
+            {
+                "tag": "schedule_appointment",
+                "patterns": ["how can i meet a cardiologist","how can i meet ent","how can i meet dermatologist","how can i meet gastroenterologist","how can i meet dentist","how can i meet gynaecologist","how can i meet pediatrician","how can i meet orthopaedic","How can I schedule an appointment with a doctor?", "I want to book an appointment","set me an appointment with ent","set me an appointment with cardiologist","set me an appointment with dermatologist","set me an appointment with ophthamologist","set me an appointment with pediatrician","set me an appointment with gynaecologist","set me an appointment with gastroenterologist","set me an appointment with orthopaedic","set me an appointment with dentist","I want an appointment with"],
+                "responses": ["To schedule an appointment, please visit hospital website\n Vajra Hospital: https://vajrahospitals.com\n Spark Hospital: https://sparkhospitals.com"]
+            }
+]}
+        
